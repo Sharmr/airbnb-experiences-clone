@@ -45,3 +45,75 @@
     padding-left: 36px;
     width: 320px;
 }
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 36px;
+}
+
+.card-picture {
+    border-radius: 9px;
+    height: 300px;
+}
+
+.status {
+    width: 61px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: white;
+    font-family: 'Poppins';
+    font-size: 10.24px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 38px;
+    margin-top: -2px;
+}
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-size: 12px;
+    padding-bottom: 30px;
+    text-align: middle;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.info > img {
+    width: 12px;
+    height: 12px;
+    padding-right: 2px;
+}
+
+.info > span {
+    padding-right: 2px;
+}
+
+.location {
+    color: #918E9B;
+}
+
+.experience-name {
+    padding-bottom: 8px;
+}
+
+.money-number {
+    font-weight: 600;
+}
+
