@@ -1,8 +1,6 @@
 import star from '../assets/star.png';
 
 export default function Card(props) {
-    props = props.items;
-    console.log(props);
     return (
         <div className='card'>
             <Picture img = {props.coverImg} openSpots = {props.openSpots} location = {props.location}/>
