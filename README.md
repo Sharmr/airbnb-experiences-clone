@@ -1,3 +1,3 @@
 # Airbnb experiences clone
 
-Built using React.js
+Built using React.js for practice
