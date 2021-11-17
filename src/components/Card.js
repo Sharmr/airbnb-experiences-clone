@@ -1,10 +1,12 @@
 import star from '../assets/star.png';
 
 export default function Card(props) {
+    props = props.items;
+    console.log(props);
     return (
         <div className='card'>
-            <Picture img = {props.img} openSpots = {props.openSpots} location = {props.location}/>
-            <Caption rating = {props.rating} reviewcount = {props.reviewCount} country = {props.country} title = {props.title} price = {props.price}/>
+            <Picture img = {props.coverImg} openSpots = {props.openSpots} location = {props.location}/>
+            <Caption rating = {props.stats.rating} reviewcount = {props.stats.reviewCount} country = {props.location} title = {props.title} price = {props.price}/>
         </div>
     );
 }
@@ -12,11 +14,11 @@ export default function Card(props) {
 function Picture(props) {
     return (
         <div className='image'>
-            <img src={props.img} alt="something" className='card-picture'></img>
-            {props.location == "Online" && <div className='status'>
+            <img src={`./assets/${props.img}`} alt="something" className='card-picture'></img>
+            {props.location === "Online" && <div className='status'>
                 ONLINE
             </div>}
-            {props.openSpots == 0 && <div className='status'>
+            {props.openSpots === 0 && <div className='status'>
                 SOLD OUT
             </div>}
         </div>

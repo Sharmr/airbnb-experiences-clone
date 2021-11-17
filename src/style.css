@@ -35,6 +35,8 @@
     align-self: flex-start;
     padding-left: 36px;
     width: 347px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .sub-header {
@@ -44,6 +46,8 @@
     align-self: flex-start;
     padding-left: 36px;
     width: 320px;
+    margin-top: 0px;
+    margin-bottom: 60px;
 }
 
 .card-container {
@@ -56,6 +60,7 @@
     flex-direction: column;
     position: relative;
     padding-left: 36px;
+    flex: 0 0 auto;
 }
 
 .card-picture {
@@ -111,6 +116,8 @@
 
 .experience-name {
     padding-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .money-number {
